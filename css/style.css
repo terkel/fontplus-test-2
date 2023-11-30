@@ -13,9 +13,9 @@
    * 
    * デフォルトではデバイスフォントを指定しています
    */
-  --font-family-heading: "ShoraiSansStdN-Bold", "Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
-  --font-family-price: "DINNextLTPro-Medium", "Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
-  --font-family-body: "Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+  --font-family-heading: "TsukuAntiqueLMinStd-L","Hiragino Sans",Meiryo,sans-serif;
+  --font-family-price: "OptimaNovaLTPro-Demi","Hiragino Sans",Meiryo,sans-serif;
+  --font-family-body: "TsukuARdGothicStd-R","Hiragino Sans",Meiryo,sans-serif;
 
   /* Color scale */
   --black-800: #222222;
@@ -40,8 +40,8 @@
    * Caption ..... 12/20
    */
   --font-size-body: 0.875rem;
-  --font-size-heading-1: calc(var(--font-size-body) * 6 / 3);
-  --font-size-heading-2: calc(var(--font-size-body) * 6 / 4);
+  --font-size-heading-1: calc(var(--font-size-body) * 6 / 2);
+  --font-size-heading-2: calc(var(--font-size-body) * 6 / 3);
   --font-size-caption: calc(var(--font-size-body) * 6 / 7);
 
   --line-height-body: 1.5rem;
@@ -106,6 +106,9 @@ table {
 }
 .header-logo {
   max-width: 200px;
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-heading-2);
+  padding-block: 1rem;
 }
 .header-nav {
   display: flex;
@@ -128,7 +131,6 @@ table {
 .item-image {
   max-width: calc(var(--font-size-body) * 30);
   flex-shrink: 0;
-  padding-block: 0.25rem;
 }
 .item-info{
   display: flex;
@@ -143,7 +145,7 @@ table {
   font-family: var(--font-family-heading);
 }
 .item-info__price {
-  margin-top: var(--spacing-block-2);
+  margin-top: var(--spacing-block-3);
   font-size: var(--font-size-heading-2);
   line-height: var(--line-height-heading-2);
   font-family: var(--font-family-price);
